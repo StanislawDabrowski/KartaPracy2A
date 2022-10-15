@@ -1,0 +1,98 @@
+#zadanie 1
+
+a = int(input())
+b = int(input())
+if (a+b)%2==0:
+  print("TAK")
+else:
+  print("NIE")
+
+#zadanie 2
+
+a = int(input())
+g = int(input())
+if (a+g)/2 > math.sqrt(a*g):
+  print("TAK")
+else:
+  print("NIE")
+
+#zadanie 3
+
+k = int(input())
+l = int(input())
+m  =int(input())
+if k==l:
+  print("pierwsza i druga liczba są sobie równe")
+else:
+  if k==m:
+    print("pierwsza i trzecia liczba są sobie równe")
+  else:
+    if l==m:
+      print("druga i trzecia liczba są sobie równe")
+    else:
+      print("wszystkie 3 liczby mają różne wartości")
+
+#zadanie 4
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+najmniejsza = a
+if b<najmniejsza:
+  najmniejsza=b
+if c<najmniejsza:
+  najmniejsza=c
+if d<najmniejsza:
+  najmniejsza=d
+print(najmniejsza)
+
+#zadanie 5
+
+a = int(input())
+b = int(input())
+c = int(input())
+if a>b+c:
+  print("NIE")
+else:
+  if b>a+c:
+    print("NIE")
+  else:
+    if c>a+b:
+      print("NIE")
+    else:
+      print("TAK")
+
+#zadanie 6
+
+a = int(input())
+b = int(input())
+c = int(input())
+if c>a and c>b:
+  najkrutszy_bok_1 = a
+  najkrutszy_bok_2 = b
+  najdłuższy_bok = c
+else:
+  if b>a and b>c:
+    najkrutszy_bok_1 = a
+    najkrutszy_bok_2 = c
+    najdłuższy_bok = b
+  else:
+    if a>b and a>c:
+      najkrutszy_bok_1 = b
+      najkrutszy_bok_2 = c
+      najdłuższy_bok = a
+    else:
+      najkrutszy_bok_1 = a
+      najkrutszy_bok_2 = b
+      najdłuższy_bok = c
+  
+if najkrutszy_bok_1**2+najkrutszy_bok_2**2>najdłuższy_bok**2:
+  print("ostrokątny")
+else:
+  if najkrutszy_bok_1**2+najkrutszy_bok_2**2==najdłuższy_bok**2:
+    print("prostokątny")
+  else:
+    if najkrutszy_bok_1**2+najkrutszy_bok_2**2<najdłuższy_bok**2:
+      print("rozwartokątny")
+  
