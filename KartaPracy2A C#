@@ -1,0 +1,85 @@
+//zadanie 1
+    
+    int a = int.Parse(Console.ReadLine());
+    int b = int.Parse(Console.ReadLine());
+    if((a+b)%2==0)
+      Console.WriteLine("TAK");
+    else
+      Console.WriteLine("NIE");
+
+    //zadanie 2
+
+    a = int.Parse(Console.ReadLine());
+    float g = int.Parse(Console.ReadLine());
+    if(((a+g)/2)>Math.Sqrt(a*g))
+      Console.WriteLine("TAK");
+    else
+      Console.WriteLine("NIE");
+
+    //zadanie 3
+
+    int k = int.Parse(Console.ReadLine());
+    int l = int.Parse(Console.ReadLine());
+    int m = int.Parse(Console.ReadLine());
+    if(k==l)
+      Console.WriteLine("pierwsza i druga liczba są sobie równe");
+    else if(k==m)
+      Console.WriteLine("pierwsza i trzecia liczba są sobie równe");
+      else if(l==m)
+        Console.WriteLine("druga i trzecia liczba są sobie równe");
+        else
+          Console.WriteLine("wszystkie trzy liczby są różne");
+
+    //zadanie 4
+
+    a = int.Parse(Console.ReadLine());
+    b = int.Parse(Console.ReadLine());
+    int c = int.Parse(Console.ReadLine());
+    int d = int.Parse(Console.ReadLine());
+    int najmniejsza = a;
+    if(b<najmniejsza)
+      najmniejsza=b;
+    if(c<najmniejsza)
+      najmniejsza=c;
+    if(d<najmniejsza)
+      najmniejsza=d;
+    Console.Write("najmniejsza z tych liczb to ");
+    Console.WriteLine(najmniejsza);
+
+    //zadanie 5
+
+    a = int.Parse(Console.ReadLine());
+    b = int.Parse(Console.ReadLine());
+    c = int.Parse(Console.ReadLine());
+    if((a+b>c) && (a+c)>b && (b+c)>a)
+      Console.WriteLine("TAK");
+    else
+      Console.WriteLine("NIE");
+
+    //zadanie 6
+
+    a = int.Parse(Console.ReadLine());
+    b = int.Parse(Console.ReadLine());
+    c = int.Parse(Console.ReadLine());
+    int najkrutszy_bok_1 = a;
+    int najkrutszy_bok_2 = b;
+    int najdłuższy_bok = c;
+    if(a>b && a>c)
+    {
+      najkrutszy_bok_1 = b;
+      najkrutszy_bok_2 = c;
+      najdłuższy_bok = a;
+    }
+    else if(b>a && b>c)
+    {
+      najkrutszy_bok_1 = a;
+      najkrutszy_bok_2 = c;
+      najdłuższy_bok = b;
+    }
+    //Console.WriteLine(Math.Pow(3, 2));
+    if(Math.Pow(najkrutszy_bok_1, 2)+Math.Pow(najkrutszy_bok_2, 2)>Math.Pow(najdłuższy_bok, 2))
+      Console.WriteLine("ostrkątny");
+    else if(Math.Pow(najkrutszy_bok_1, 2)+Math.Pow(najkrutszy_bok_2, 2)==Math.Pow(najdłuższy_bok, 2))
+      Console.WriteLine("prostokątny");
+         else if(Math.Pow(najkrutszy_bok_1, 2)+Math.Pow(najkrutszy_bok_2, 2)<Math.Pow(najdłuższy_bok, 2))
+      Console.WriteLine("rozwartokątny");
